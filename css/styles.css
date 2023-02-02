@@ -13,6 +13,8 @@
   --accent-text-color: #2196f3;
   --main-bg-color: #fff;
   --secondary-bg-color: #f5f4fa;
+  --black-color: #000000;
+  --white-color: #ffffff;
   --main-font-size: 14px;
   --main-line-height: 1.71;
   --auth-nav-text-color: rgba(255, 255, 255, 0.6);
@@ -57,7 +59,7 @@ body {
 /* logo */
 
 .logo {
-  color: #000;
+  color: var(--black-color);
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -117,7 +119,7 @@ body {
 }
 
 .hero-title {
-  color: #fff;
+  color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -129,7 +131,7 @@ body {
 
 .hero-button {
   background-color: var(--accent-text-color);
-  color: #fff;
+  color: var(--white-color);
 
   line-height: 1.86;
   letter-spacing: 0.06em;
@@ -165,7 +167,7 @@ body {
 }
 
 .footer > .logo {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .address {
@@ -173,7 +175,7 @@ body {
 }
 
 .address .text {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .address .link {
