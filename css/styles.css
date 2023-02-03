@@ -162,13 +162,13 @@ body {
   font-weight: 500;
 }
 
-/* Footer */
+/* Page-footer */
 
-.footer {
+.page-footer {
   background-color: #2f303a;
 }
 
-.footer > .logo {
+.page-footer > .logo {
   color: var(--white-color);
 }
 
