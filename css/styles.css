@@ -1,0 +1,198 @@
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --main-bg-color: #fff;
+  --secondary-bg-color: #f5f4fa;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --main-font-size: 14px;
+  --main-line-height: 1.71;
+  --auth-nav-text-color: rgba(255, 255, 255, 0.6);
+  --card-set-gap: 30px;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+/* LOGO */
+
+.logo {
+  color: var(--black-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo > .accent {
+  color: var(--accent-text-color);
+}
+
+/* SITE-NAV */
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link,
+.auth-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.link.current {
+  color: var(--accent-text-color);
+}
+
+/* AUTH-NAV */
+
+.auth-nav .link {
+  color: var(--main-text-color);
+}
+
+/* SECTION */
+
+.section .title {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* HERO */
+
+.hero-section {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-text-color);
+  color: var(--white-color);
+
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+}
+
+/* FEATURES */
+
+.feature-list .subtitle {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* TEAM */
+
+.team-list {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list .subtitle {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: #2f303a;
+}
+
+.page-footer > .logo {
+  color: var(--white-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address .text {
+  color: var(--white-color);
+}
+
+.address .link {
+  color: var(--auth-nav-text-color);
+}
+
+/* PORTFOLIO */
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+  background-color: var(--accent-text-color);
+  color: #fff;
+}
+
+.portfolio-list .subtitle {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+  color: var(--main-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
