@@ -45,6 +45,20 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PAGE-HEADER */
+
+.page-header{
+  
+}
+
 /* LOGO */
 
 .logo {
