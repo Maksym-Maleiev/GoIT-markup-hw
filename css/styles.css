@@ -22,7 +22,25 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -31,6 +49,7 @@ body {
 }
 
 .button {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -55,8 +74,8 @@ body {
 
 /* PAGE-HEADER */
 
-.page-header{
-  
+.page-header {
+  display: flex;
 }
 
 /* LOGO */
@@ -77,12 +96,31 @@ body {
 
 /* SITE-NAV */
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav > .main-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.main-nav > .item:not(:last-child),
+.auth-nav.list > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   color: var(--secondary-text-color);
 }
 
 .site-nav .link,
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,13 +140,28 @@ body {
 
 /* AUTH-NAV */
 
+.auth-nav.list {
+  display: flex;
+  margin-left: auto;
+}
+
 .auth-nav .link {
   color: var(--main-text-color);
 }
 
 /* SECTION */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-padding {
+  padding-bottom: 0;
+}
+
 .section .title {
+  margin-bottom: 50px;
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -125,16 +178,17 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
+  padding: 10px 32px;
   background-color: var(--accent-text-color);
   color: var(--white-color);
 
@@ -144,7 +198,21 @@ body {
 
 /* FEATURES */
 
+.feature-list {
+  display: flex;
+}
+
+.feature-list > .item {
+  max-width: 270px;
+}
+
+.feature-list > .item + .item,
+.work-list > .item + .item {
+  margin-left: 30px;
+}
+
 .feature-list .subtitle {
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -153,14 +221,39 @@ body {
   text-transform: uppercase;
 }
 
+/* WORK */
+
+.work-list {
+  display: flex;
+}
+
 /* TEAM */
 
 .team-list {
+  display: flex;
   font-size: 16px;
   line-height: 1.19;
 }
 
+.team-list > .item {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-list .subtitle {
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 500;
 }
@@ -168,14 +261,17 @@ body {
 /* FOOTER */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.page-footer > .logo {
+.page-footer .logo {
   color: var(--white-color);
 }
 
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
 
@@ -184,10 +280,22 @@ body {
 }
 
 .address .link {
+  display: inline-block;
+  margin-top: 9px;
   color: var(--auth-nav-text-color);
 }
 
 /* PORTFOLIO */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list > .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-list .button:hover,
 .filter-list .button:focus {
@@ -195,7 +303,30 @@ body {
   color: #fff;
 }
 
-.portfolio-list .subtitle {
+/* CARD-SET */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.card {
+  display: block;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+
+.card-content {
+  padding: 20px 24px;
+  background-color: var(--white-color);
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.card .subtitle {
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -204,7 +335,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-list .text {
+.card .text {
   color: var(--main-text-color);
 
   font-size: 16px;
