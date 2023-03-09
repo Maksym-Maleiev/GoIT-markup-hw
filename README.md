@@ -13,6 +13,7 @@
 
 ### Project
 
-**&#171;A1&#187;** There is an `images` folder in the root of the project. **&#171;A2&#187;** All
-vector images (icons) are collected in the icons.svg SVG sprite, which is located in the images
-folder.
+**&#171;A1&#187;** There is an `images` folder in the root of the project.
+
+**&#171;A2&#187;** All vector images (icons) are collected in the icons.svg SVG sprite, which is
+located in the images folder.
