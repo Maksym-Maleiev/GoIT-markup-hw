@@ -1,3 +1,3 @@
 # Homework
 
-- Create the <goit-markup-hw-04> repository;
+- Create the <sup>goit-markup-hw-04</sup> repository;
