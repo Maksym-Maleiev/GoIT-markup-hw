@@ -26,15 +26,27 @@
             <ul class="main-nav list">
               <li class="item"><a href="./index.html" class="link">Studio</a></li>
               <li class="item"><a href="./portfolio.html" class="link current">Portfolio</a></li>
-              <li class="item"><a href="/" class="link">Contacts</a></li>
+              <li class="item"><a href="#contacts" class="link">Contacts</a></li>
             </ul>
           </nav>
 
           <ul class="auth-nav list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="link mail">
+                <svg class="icon" width="16px" height="12">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item"><a href="tel:+380961111111" class="link">+38(096) 111-11-11</a></li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link tel">
+                <svg class="icon" width="10px" height="16">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+                +38(096) 111-11-11</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -177,15 +189,54 @@
     </main>
 
     <!-- PAGE FOOTER -->
-    <footer class="page-footer">
+    <footer id="contacts" class="page-footer">
       <div class="container">
-        <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+        <div class="footer-wrapper">
+          <div class="footer-nav">
+            <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
 
-        <address class="address">
-          <p class="text">Kyiv, 26 Lesya Ukrainka Ave</p>
-          <a href="mailto:info@example.com" class="link">info@example.com</a><br />
-          <a href="tel:+380991111111" class="link">+38(099) 111-11-11</a>
-        </address>
+            <address class="address">
+              <p class="text">Kyiv, 26 Lesya Ukrainka Ave</p>
+              <a href="mailto:info@example.com" class="link">info@example.com</a><br />
+              <a href="tel:+380991111111" class="link">+38(099) 111-11-11</a>
+            </address>
+          </div>
+
+          <div class="join">
+            <b class="subtitle">Join</b>
+
+            <ul class="social-list dark-theme list">
+              <li class="item">
+                <a aria-label="Instagram" href="/" class="link">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a aria-label="Twitter" href="/" class="link">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a aria-label="Facebook" href="/" class="link">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a aria-label="LinkedIn" href="/" class="link">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
