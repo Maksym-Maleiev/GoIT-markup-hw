@@ -1,7 +1,5 @@
 # Homework
 
----
-
 - Create the `goit-markup-hw-4` repository;
 - Clone the created repository and copy the files of the previous work into it.
 - Add markup and styling for icons and decorative effects for pages from the layout
@@ -13,8 +11,6 @@
 
 ## Eligibility criteria for a mentor
 
----
-
 ### Project
 
-A1 There is an `images` folder in the root of the project.
+&#171;A1&#187; There is an `images` folder in the root of the project.
