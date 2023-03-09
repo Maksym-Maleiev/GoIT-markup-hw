@@ -13,4 +13,4 @@
 
 ### Project
 
-&#171;A1&#187; There is an `images` folder in the root of the project.
+**&#171;A1&#187;** There is an `images` folder in the root of the project.
