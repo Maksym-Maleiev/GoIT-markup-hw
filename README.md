@@ -1,11 +1,9 @@
 # Homework
 
 - Create the `goit-markup-hw-1` repository.
-
 - Complete the HTML markup for the
-  [homework page #1](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=0%3A1&t=n8caq0fLIVLTvHKC-0>)
+  [**homework page #1**](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=0%3A1&t=n8caq0fLIVLTvHKC-0>)
   layout, without any CSS styling.
-
 - Set up `GitHub Pages` and add a link to the live page in the header of the GitHub repository.
 
 ## Eligibility criteria for a mentor
@@ -25,7 +23,7 @@ and words of the English language.
 
 **`«A6»`** All bitmaps are optimized using [squoosh](https://squoosh.app/).
 
-**`«A7»`** The code is written following the [manual](https://codeguide.co/).
+**`«A7»`** The code is written following the [**manual**](https://codeguide.co/).
 
 ### Markup
 
@@ -35,7 +33,7 @@ and words of the English language.
 
 **`«B3»`** tags are used according to their semantic meaning.
 
-**`«B4»`** HTML passes the [validator](https://validator.w3.org/nu/) without errors.
+**`«B4»`** HTML passes the [**validator**](https://validator.w3.org/nu/) without errors.
 
 **`«B5»`** The markup has tags to highlight the main structure of the page: `<header>`, `<main>` and
 `<footer>`.
