@@ -27,7 +27,7 @@ and words of the English language.
 
 **`«A7»`** All bitmaps are optimized using [squoosh](https://squoosh.app/).
 
-**`«A8»`** The code is written following the [manual](https://codeguide.co/).
+**`«A8»`** The code is written following the [**manual**](https://codeguide.co/).
 
 ### Markup
 
