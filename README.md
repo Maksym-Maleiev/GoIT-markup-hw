@@ -63,9 +63,10 @@ elements horizontally differently.
 
 **`«B12»`** Elements do not have a fixed height, it is determined by their content.
 
-**`«B13»`** Elements do not have a fixed height, it is determined by their content.
+**`«B13»`** The header has a bottom frame, you need to zoom in very close to the layout to see it.
 
-**`«B14»`** Elements do not have a fixed height, it is determined by their content.
+**`«B14»`** The sections are stacked on top of each other like a stack of books, with no outside
+padding.
 
 **`«B15»`** For all sections, one `.section` class is used, top and bottom paddings of `94px` are
 set, pushing the content inside the section.
