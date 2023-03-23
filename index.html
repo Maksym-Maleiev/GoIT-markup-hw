@@ -60,7 +60,7 @@
           Effective solutions<br />
           for your business
         </h1>
-        <button type="button" class="hero-button button">Order a service</button>
+        <button type="button" class="hero-button button" data-modal-open>Order a service</button>
       </section>
 
       <!-- FEATURES -->
@@ -125,6 +125,8 @@
             <li class="item">
               <div class="thumb">
                 <img src="./images/work-img_1.jpg" alt="website development" width="370" />
+
+                <h3 class="subtitle">desktop applications</h3>
               </div>
             </li>
 
@@ -135,12 +137,16 @@
                   alt="responsive for different platforms"
                   width="370"
                 />
+
+                <h3 class="subtitle">mobile applications</h3>
               </div>
             </li>
 
             <li class="item">
               <div class="thumb">
                 <img src="./images/work-img_3.jpg" alt="personal design" width="370" />
+
+                <h3 class="subtitle">design solutions</h3>
               </div>
             </li>
           </ul>
@@ -423,5 +429,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- BACKDROP -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button aria-label="close" class="button" data-modal-close>Close</button>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
