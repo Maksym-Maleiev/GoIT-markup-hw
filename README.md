@@ -74,3 +74,43 @@ appear.
 
 **`«D8»`** The appearance and disappearance of the modal is animated by a transition with an
 arbitrary effect, such as `scale` or `translate`, and `opacity`.
+
+### Opening/closing a modal window
+
+A modal window with an application form opens by clicking on the `"Order a service"` button. In
+order for the script to work, you need to add special attributes to the markup, by which the script
+searches for elements:
+
+- `data-modal-open` - to the button to open the modal window.
+- `data-modal-close` - to the close button of the modal window.
+- `data-modal` - to the backdrop of the modal window.
+
+Then, before the closing `body` tag, add a `script` tag with a link to the script file for the modal
+window. You can watch the
+[video instruction](https://drive.google.com/file/d/1yasixN2K-9DdsYtKCJWVay9WbyTZai0t/view).
+
+```<body>
+  <!-- All your markup, including modal markup -->
+
+  <!-- Put it before the closing body tag -->
+  <script src="./js/modal.js"></script>
+</body>
+```
+
+The script that needs to be copied and pasted into the `modal.js` file.
+
+```(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+```
