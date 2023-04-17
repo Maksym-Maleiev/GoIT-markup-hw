@@ -281,11 +281,12 @@ img {
 
   opacity: 1;
 
-  transition: opacity var(--transition-duration) var(--timing-function);
+  transition: opacity var(--transition-duration) var(--timing-function),
+    visibility var(--transition-duration) var(--timing-function);
 }
 
 .backdrop.is-hidden {
-  visibility: visible;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
