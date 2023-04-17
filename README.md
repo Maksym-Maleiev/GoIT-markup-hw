@@ -89,30 +89,20 @@ Then, before the closing `body` tag, add a `script` tag with a link to the scrip
 window. You can watch the
 [video instruction](https://drive.google.com/file/d/1yasixN2K-9DdsYtKCJWVay9WbyTZai0t/view).
 
-```
 <body>
   <!-- All your markup, including modal markup -->
 
   <!-- Put it before the closing body tag -->
   <script src="./js/modal.js"></script>
 </body>
-```
+
 
 The script that needs to be copied and pasted into the `modal.js` file.
 
-```
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+(() => { const refs = { openModalBtn: document.querySelector('[data-modal-open]'), closeModalBtn:
+document.querySelector('[data-modal-close]'), modal: document.querySelector('[data-modal]'), };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+refs.openModalBtn.addEventListener('click', toggleModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-```
+function toggleModal() { refs.modal.classList.toggle('is-hidden'); } })();
