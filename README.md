@@ -1,6 +1,6 @@
 # Homework
 
-- Create the `goit-markup-hw-4` repository;
+- Create the `goit-markup-hw-5` repository;
 - Clone the created repository and copy the files of the previous work into it.
 - Add markup and styling for icons and decorative effects for pages from the layout
   [homework #5.](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1-836&t=3q4RZmJqj7UTH92c-0>)
