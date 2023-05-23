@@ -3,7 +3,7 @@
 - Create the `goit-markup-hw-6` repository;
 - Clone the created repository and copy the files of the previous work into it.
 - Add markup and styling for icons and decorative effects for pages from the layout
-  [homework #6.](<https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)?node-id=1%3A1821>)
+  [homework #6.](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?type=design&node-id=1-1821&t=B04OeSlcZ17ylOSM-0>)
 - Set up `GitHub Pages` and add a link to the live page in the header of the GitHub repository.
 
 ## Eligibility criteria for a mentor
