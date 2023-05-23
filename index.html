@@ -426,6 +426,20 @@
               </li>
             </ul>
           </div>
+
+          <div class="subscr">
+            <b class="subtitle">Subscribe to newsletter</b>
+
+            <div class="subscr-field">
+              <input type="email" class="subscr-input" placeholder="E-mail" />
+              <button class="button subscr-button" type="submit">
+                Subscribe
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -438,10 +452,51 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <form action="javascript:void(0);" method="post" class="form js-speaker-form">
+          <b class="form-title">Leave your details, we will call you back</b>
+
+          <div class="form-field">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" type="text" name="user-name" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="tel">Phone</label>
+            <input class="form-input" id="tel" type="tel" name="tel" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" type="email" name="email" />
+          </div>
+
+          <div class="form-field textarea">
+            <label class="form-label" for="comment">Comment</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="6"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <div class="form-field policy">
+            <input id="policy" type="checkbox" name="policy" />
+            <label class="policy-label" for="policy"
+              >I agree with the newsletter and accept
+              <a class="policy-accent" href="#">Agreement conditions</a></label
+            >
+          </div>
+
+          <button class="button submit-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
     <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
