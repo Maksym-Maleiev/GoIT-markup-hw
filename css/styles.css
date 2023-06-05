@@ -395,7 +395,7 @@ img {
 }
 
 .form-title {
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -403,30 +403,61 @@ img {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 28px;
+}
+
+.form-field:nth-child(4) {
   margin-bottom: 10px;
 }
 
+.form-input {
+  margin: 0;
+  padding: 11px 12px;
+  padding-left: 42px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  transition: transform var(--transition-duration) var(--timing-function);
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-30px, -40px);
+}
+
+.form-field > .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.label-comment {
+  margin-bottom: 4px;
+}
+
 .form-label,
+.label-comment,
 .form-field .comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
-.form-label {
-  margin-bottom: 4px;
-}
-
-.form-input {
-  margin: 0;
-  padding: 11px 12px;
-}
-
 .form-input,
-.form-field .comment {
+.form-field > .comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -435,7 +466,7 @@ img {
   margin-bottom: 20px;
 }
 
-.form-field .comment {
+.form-field > .comment {
   padding: 12px 16px;
   resize: none;
 }
@@ -448,6 +479,38 @@ img {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-field.policy > .icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon {
+  background-color: var(--accent-text-color);
+  background-image: url('../images/check.svg#check');
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+
+  border-color: var(--accent-text-color);
 }
 
 .policy-label {
