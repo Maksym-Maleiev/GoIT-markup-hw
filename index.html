@@ -453,25 +453,54 @@
           </svg>
         </button>
 
-        <form action="javascript:void(0);" method="post" class="form js-speaker-form">
+        <form
+          action="javascript:void(0);"
+          method="post"
+          class="form js-speaker-form"
+          autocomplete="off"
+        >
           <b class="form-title">Leave your details, we will call you back</b>
 
-          <div class="form-field">
+          <!-- <div class="form-field">
             <label class="form-label" for="name">Name</label>
             <input class="form-input" id="name" type="text" name="user-name" />
-          </div>
+          </div> -->
 
-          <div class="form-field">
+          <label class="form-field">
+            <input type="text" name="user-name" class="form-input" placeholder=" " />
+            <span class="form-label">Name</span>
+            <svg class="icon">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
+          </label>
+
+          <!-- <div class="form-field">
             <label class="form-label" for="tel">Phone</label>
             <input class="form-input" id="tel" type="tel" name="tel" />
-          </div>
+          </div> -->
 
-          <div class="form-field">
+          <label class="form-field">
+            <input type="tel" name="phone" class="form-input" placeholder=" " />
+            <span class="form-label">Phone</span>
+            <svg class="icon">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </label>
+
+          <!-- <div class="form-field">
             <label class="form-label" for="email">Email</label>
             <input class="form-input" id="email" type="email" name="email" />
-          </div>
+          </div> -->
 
-          <div class="form-field textarea">
+          <label for="" class="form-field">
+            <input type="email" name="email" class="form-input" placeholder=" " />
+            <span class="form-label">Email</span>
+            <svg class="icon">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
+          </label>
+
+          <!-- <div class="form-field textarea">
             <label class="form-label" for="comment">Comment</label>
             <textarea
               class="comment"
@@ -480,15 +509,29 @@
               rows="6"
               placeholder="Enter text"
             ></textarea>
-          </div>
+          </div> -->
 
-          <div class="form-field policy">
+          <label class="form-field textarea">
+            <span class="label-comment">Comment</span>
+            <textarea class="comment" name="comment" rows="6" placeholder="Enter text"></textarea>
+          </label>
+
+          <!-- <div class="form-field policy">
             <input id="policy" type="checkbox" name="policy" />
             <label class="policy-label" for="policy"
               >I agree with the newsletter and accept
               <a class="policy-accent" href="#">Agreement conditions</a></label
             >
-          </div>
+          </div> -->
+
+          <label for="" class="form-field policy">
+            <input class="checkbox" type="checkbox" name="policy" />
+            <span class="icon"></span>
+            <span class="policy-label"
+              >I agree with the newsletter and accept
+              <a class="policy-accent" href="#">Agreement conditions</a></span
+            >
+          </label>
 
           <button class="button submit-button" type="submit">Send</button>
         </form>
