@@ -914,10 +914,6 @@ img {
   color: var(--white-color);
 }
 
-.checkbox:focus + .checkbox-icon {
-  box-shadow: 0 0 0 0.1em var(--accent-text-color);
-}
-
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-text-color);
   fill: currentColor;
