@@ -906,11 +906,16 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
-  fill: transparent;
+  fill: none;
+  background-color: transparent;
 
   border: 2px solid var(--black-color);
   border-radius: 2px;
   color: var(--white-color);
+}
+
+.checkbox:focus + .checkbox-icon {
+  box-shadow: 0 0 0 0.1em var(--accent-text-color);
 }
 
 .checkbox:checked + .checkbox-icon {
