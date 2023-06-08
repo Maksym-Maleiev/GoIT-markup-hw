@@ -563,6 +563,11 @@ img {
   border-radius: 4px;
 }
 
+.subscr-input:focus {
+  border-color: transparent;
+  outline: 1px solid var(--white-color);
+}
+
 .subscr-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -576,11 +581,20 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 12px;
+
+  overflow: hidden;
 }
 
 .subscr-button > .icon {
   margin-left: 10px;
   fill: currentColor;
+
+  transition: transform var(--transition-duration) var(--timing-function);
+}
+
+.subscr-button:hover > .icon,
+.subscr-button:focus > .icon {
+  transform: translate(40px, -40px);
 }
 
 /* PORTFOLIO */
