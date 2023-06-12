@@ -16,13 +16,13 @@
 preprocessor style files are located.
 
 **`«A4»`** The `sass` folder contains the `main.scss` file - the main file into which all SASS
-fragments (partials, `\_name.scss` files) are imported.
+fragments (partials, `_name.scss` files) are imported.
 
 **`«A5»`** The layout color palette and font sets are placed in variables in the `variables.scss`
 file, which is located in the `sass/utils` folder. You can use CSS or SASS variables (optional).
 
 **`«A5»`** For each component, a separate style fragment file has been created in the
-`sass/components` folder. For example `\_page-header.scss`, `\_logo.scss etc`.
+`sass/components` folder. For example `_page-header.scss`, `_logo.scss etc`.
 
 **`«A5»`** The `index.html` and `portfolio.html` files include a minified style file `main.min.css`
 from the `css` folder.
