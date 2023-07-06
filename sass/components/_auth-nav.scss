@@ -1,0 +1,33 @@
+.auth-nav-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav-list__link {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--transition-duration) var(--timing-function);
+  color: var(--main-text-color);
+}
+
+.auth-nav-list__link:hover,
+.auth-nav-list__link:focus {
+  color: var(--accent-text-color);
+}
+
+.auth-nav-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
