@@ -1,55 +1,22 @@
 @import './utils/colors';
 @import './utils/variables';
 @import './base/normalize';
+@import './base/base';
 @import './components/page-header';
 @import './components/logo';
 @import './components/site-nav';
 @import './components/auth-nav';
-
-body {
-  color: getColor('main-color');
-  background-color: getColor('main-bg-color');
-
-  font-family: 'Roboto', sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import './components/hero';
+@import './components/back-drop';
+@import './components/modal';
+@import './components/form';
+@import './components/features';
+@import './components/work';
+@import './components/social';
+@import './components/clients';
+@import './components/footer';
+@import './components/address';
+@import './components/join';
+@import './components/subscribe';
+@import './components/portfolio';
+@import './components/card-set';
