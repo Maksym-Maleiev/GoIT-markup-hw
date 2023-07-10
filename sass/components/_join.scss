@@ -1,0 +1,25 @@
+.join {
+  margin-left: 70px;
+}
+
+.join__title,
+.subscr__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-list__link--dark-theme {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--transition-duration) var(--timing-function);
+}
+
+.social-list__link--dark-theme:hover,
+.social-list__link--dark-theme:focus {
+  background-color: var(--accent-text-color);
+}
