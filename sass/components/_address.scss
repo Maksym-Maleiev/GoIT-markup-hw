@@ -1,0 +1,14 @@
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.address__text {
+  color: var(--white-color);
+}
+
+.address__link {
+  display: inline-block;
+  margin-top: 9px;
+  color: var(--auth-nav-text-color);
+}
