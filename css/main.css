@@ -280,6 +280,13 @@ img {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/raleway-variablefont_wght-webfont.woff") format("woff"), url("/fonts/raleway-variablefont_wght-webfont.woff2") format("woff2");
+}
 .page-header::after {
   content: "";
   display: block;
