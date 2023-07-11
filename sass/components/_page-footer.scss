@@ -1,0 +1,15 @@
+.page-footer {
+  $padding: 60px;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  background-color: #2f303a;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo--white {
+  color: getColor('white-color');
+}
