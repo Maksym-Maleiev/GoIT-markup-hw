@@ -3,15 +3,14 @@
 }
 
 .subscr__field {
-  display: flex;
-  align-items: center;
+  @include centeredFlex();
 }
 
 .subscr__input {
   min-width: 358px;
   padding: 16px;
 
-  color: var(--white-color);
+  color: getColor('white-color');
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -19,7 +18,7 @@
 
 .subscr__input:focus {
   border-color: transparent;
-  outline: 1px solid var(--white-color);
+  outline: 1px solid getColor('white-color');
 }
 
 .subscr__input::placeholder {
@@ -30,20 +29,31 @@
 }
 
 .subscr__button {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include centeredFlex(inline-flex);
+
+  $padding: 10px;
+  padding-top: $padding;
+  padding-bottom: $padding;
   margin-left: 12px;
 
+  background-color: getColor('accent-color');
+  color: getColor('white-color');
+
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+
+  transition: box-shadow $transition-duration $timing-function;
+
   overflow: hidden;
+
+  @extend %button;
 }
 
 .subscr__icon {
   margin-left: 10px;
   fill: currentColor;
 
-  transition: transform var(--transition-duration) var(--timing-function);
+  transition: transform $transition-duration $timing-function;
 }
 
 .subscr__button:hover > .subscr__icon,
