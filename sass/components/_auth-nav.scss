@@ -1,6 +1,8 @@
 .auth-nav-list {
   display: flex;
   margin-left: auto;
+
+  @extend %list;
 }
 
 .auth-nav-list__item:not(:last-child) {
@@ -8,23 +10,25 @@
 }
 
 .auth-nav-list__link {
-  display: inline-flex;
-  align-items: center;
+  @include centeredFlex(inline-flex);
+
   padding-top: 32px;
   padding-bottom: 32px;
 
+  color: getColor('main-color');
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--transition-duration) var(--timing-function);
-  color: var(--main-text-color);
+  transition: color $transition-duration $timing-function;
+
+  @extend %link;
 }
 
 .auth-nav-list__link:hover,
 .auth-nav-list__link:focus {
-  color: var(--accent-text-color);
+  color: getColor('accent-color');
 }
 
 .auth-nav-list__icon {
