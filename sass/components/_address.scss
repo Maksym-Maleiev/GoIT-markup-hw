@@ -4,11 +4,13 @@
 }
 
 .address__text {
-  color: var(--white-color);
+  color: getColor('white-color');
 }
 
 .address__link {
   display: inline-block;
   margin-top: 9px;
-  color: var(--auth-nav-text-color);
+  color: getColor('auth-nav-text-color');
+
+  @extend %link;
 }
