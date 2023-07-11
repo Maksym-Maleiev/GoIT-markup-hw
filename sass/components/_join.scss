@@ -9,17 +9,17 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: getColor('white-color');
 }
 
 .social-list__link--dark-theme {
-  color: var(--white-color);
+  color: getColor('white-color');
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: background-color var(--transition-duration) var(--timing-function);
+  transition: background-color $transition-duration $timing-function;
 }
 
 .social-list__link--dark-theme:hover,
 .social-list__link--dark-theme:focus {
-  background-color: var(--accent-text-color);
+  background-color: getColor('accent-text-color');
 }
