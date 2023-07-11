@@ -1,17 +1,21 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * $card-set-gap);
+  margin-left: calc(-1 * $card-set-gap);
+
+  @extend %list;
 }
 
 .card {
   display: block;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - $card-set-gap);
+  margin-top: $card-set-gap;
+  margin-left: $card-set-gap;
 
-  transition: box-shadow var(--transition-duration) var(--timing-function);
+  transition: box-shadow $transition-duration $timing-function;
+
+  @extend %link;
 }
 
 .card:hover,
@@ -34,13 +38,14 @@
 
   display: flex;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  $padding: 24px;
+  padding-left: $padding;
+  padding-right: $padding;
 
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateX(-100%);
-  transition: transform var(--transition-duration) var(--timing-function);
+  transition: transform $transition-duration $timing-function;
 }
 
 .card:hover .overlay,
@@ -52,18 +57,18 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.55;
-  color: var(--white-color);
+  color: getColor('white-color');
 }
 
 .card__content {
   padding: 20px 24px;
-  background-color: var(--white-color);
+  background-color: getColor('white-color');
   text-align: left;
   border: 1px solid #eee;
 }
 
 .card__subtitle {
-  color: var(--secondary-text-color);
+  color: getColor('secondary-color');
 
   font-weight: 700;
   font-size: 18px;
@@ -72,7 +77,7 @@
 }
 
 .card__text {
-  color: var(--main-text-color);
+  color: getColor('main-color');
 
   font-size: 16px;
   line-height: 1.88;
