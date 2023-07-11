@@ -1,5 +1,7 @@
 .social-list {
   display: flex;
+
+  @extend %list;
 }
 
 .social-list__item:not(:last-child) {
@@ -12,23 +14,25 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--fill-color);
+  color: getColor('fill-color');
 
-  transition: background-color var(--transition-duration) var(--timing-function);
+  transition: background-color $transition-duration $timing-function;
+
+  @extend %link;
 }
 
 .social-list__link:hover,
 .social-list__link:focus {
-  background-color: var(--accent-text-color);
+  background-color: getColor('accent-color');
 }
 
 .social-list__icon {
   fill: currentColor;
 
-  transition: fill var(--transition-duration) var(--timing-function);
+  transition: fill $transition-duration $timing-function;
 }
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
-  fill: var(--white-color);
+  fill: getColor('white-color');
 }
