@@ -1,6 +1,8 @@
 .clients-list {
   display: flex;
   text-align: center;
+
+  @extend %list;
 }
 
 .clients-list__item {
@@ -8,34 +10,34 @@
 }
 
 .clients-list__item:not(:last-child) {
-  margin-right: var(--card-set-gap);
+  margin-right: $card-set-gap;
 }
 
 .clients-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex();
 
   height: 92px;
   border-radius: 4px;
-  color: var(--fill-color);
-  border: 1px solid var(--fill-color);
+  color: getColor('fill-color');
+  border: 1px solid getColor('fill-color');
 
-  transition: border-color var(--transition-duration) var(--timing-function);
+  transition: border-color $transition-duration $timing-function;
+
+  @extend %link;
 }
 
 .clients-list__link:hover,
 .clients-list__link:focus {
-  border-color: var(--accent-text-color);
+  border-color: getColor('accent-color');
 }
 
 .clients-list__icon {
   fill: currentColor;
 
-  transition: fill var(--transition-duration) var(--timing-function);
+  transition: fill $transition-duration $timing-function;
 }
 
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:focus .clients-list__icon {
-  fill: var(--accent-text-color);
+  fill: getColor('accent-color');
 }
