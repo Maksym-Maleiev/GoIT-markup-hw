@@ -1,5 +1,7 @@
 .work-list {
   display: flex;
+
+  @extend %list;
 }
 
 .work-list__item:not(:last-child) {
@@ -23,6 +25,6 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: var(--white-color);
+  color: getColor('white-color');
   background-color: rgba(47, 48, 58, 0.8);
 }
