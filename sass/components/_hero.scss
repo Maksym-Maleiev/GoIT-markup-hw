@@ -1,6 +1,7 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  $padding: 200px;
+  padding-top: $padding;
+  padding-bottom: $padding;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +18,7 @@
 
 .hero__title {
   margin-bottom: 30px;
-  color: var(--white-color);
+  color: getColor('white-color');
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -25,17 +26,17 @@
   text-transform: uppercase;
 }
 
-.hero__button,
-.submit-button,
-.subscr__button {
+.hero__button {
   padding: 10px 32px;
-  background-color: var(--accent-text-color);
-  color: var(--white-color);
+  background-color: getColor('accent-color');
+  color: getColor('white-color');
 
   line-height: 1.86;
   letter-spacing: 0.06em;
 
-  transition: box-shadow var(--transition-duration) var(--timing-function);
+  transition: box-shadow $transition-duration $timing-function;
+
+  @extend %button;
 }
 
 .hero__button:hover,
