@@ -12,17 +12,17 @@
   overflow: hidden;
 }
 
-.card-set, .filter-list, .clients-list, .social-list, .team-list, .work-list, .feature-list, .auth-nav-list, .site-nav-list {
+.site-nav-list, .auth-nav-list, .feature-list, .work-list, .team-list, .social-list, .clients-list, .filter-list, .card-set {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.card, .address__link, .clients-list__link, .social-list__link, .auth-nav-list__link, .site-nav-list__link, .logo {
+.logo, .site-nav-list__link, .auth-nav-list__link, .social-list__link, .clients-list__link, .address__link, .card {
   text-decoration: none;
 }
 
-.filter-list__button, .subscr__button, .submit-button, .close-button, .hero__button {
+.hero__button, .close-button, .submit-button, .subscr__button, .filter-list__button {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -36,40 +36,45 @@
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("/fonts/raleway-bold.woff") format("woff"), url("/fonts/raleway-bold.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/roboto-regular-webfont.woff") format("woff"), url("/fonts/roboto-regular-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/roboto-medium-webfont.woff") format("woff"), url("/fonts/roboto-medium-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("/fonts/roboto-bold-webfont.woff") format("woff"), url("/fonts/roboto-bold-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url("/fonts/roboto-black-webfont.woff") format("woff"), url("/fonts/roboto-black-webfont.woff2") format("woff2");
 }
+
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -87,12 +92,16 @@ Use a better box model (opinionated).
 
 html {
   /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.15; /* 1. Correct the line height in all browsers. */
-  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.15;
+  /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%;
+  /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4;
+  /* 3. Use a more readable tab size (opinionated). */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+     tab-size: 4;
+  /* 3 */
 }
 
 /*
@@ -100,7 +109,8 @@ Sections
 ========
 */
 body {
-  margin: 0; /* Remove the margin in all browsers. */
+  margin: 0;
+  /* Remove the margin in all browsers. */
 }
 
 /*
@@ -112,8 +122,10 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
 }
 
 /*
@@ -144,8 +156,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -183,8 +197,10 @@ Tabular data
 2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
 }
 
 /*
@@ -200,10 +216,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -218,9 +238,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -273,9 +293,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -290,8 +312,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -308,7 +332,7 @@ summary {
 body {
   color: #757575;
   background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -331,7 +355,7 @@ img {
 }
 
 .page-header::after {
-  content: "";
+  content: '';
   display: block;
   max-width: 1600px;
   margin-left: auto;
@@ -347,7 +371,7 @@ img {
 
 .logo {
   color: #212121;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -381,6 +405,7 @@ img {
 }
 
 .site-nav-list__link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -393,17 +418,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-list__link:hover,
-.site-nav-list__link:focus {
+.site-nav-list__link:hover, .site-nav-list__link:focus {
   color: #2196f3;
 }
 
-.site-nav-list__link {
-  position: relative;
+.site-nav-list__link:hover::after, .site-nav-list__link:focus::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .site-nav-list__link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
@@ -423,20 +449,13 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-list__link:hover::after,
-.site-nav-list__link:focus::after {
-  opacity: 1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
 .site-nav-list__link--current {
   position: relative;
   color: #2196f3;
 }
 
 .site-nav-list__link--current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
@@ -562,13 +581,13 @@ img {
 
 .hero__button:hover,
 .hero__button:focus {
-  -webkit-box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
-          box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.3);
+          box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.3);
 }
 
 .hero__button:active {
-  -webkit-box-shadow: inset 3px 3px 3px 3px hsla(207, 83%, 19%, 0.3);
-          box-shadow: inset 3px 3px 3px 3px hsla(207, 83%, 19%, 0.3);
+  -webkit-box-shadow: inset 3px 3px 3px 3px rgba(8, 52, 89, 0.3);
+          box-shadow: inset 3px 3px 3px 3px rgba(8, 52, 89, 0.3);
 }
 
 .backdrop {
@@ -718,14 +737,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input:not(:-moz-placeholder-shown) + .form__label {
-  transform: translate(-30px, -40px);
-}
-
-.form__input:not(:-ms-input-placeholder) + .form__label {
-  transform: translate(-30px, -40px);
-}
-
 .form__field:focus-within > .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
   -webkit-transform: translate(-30px, -40px);
@@ -745,14 +756,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input:not(:-moz-placeholder-shown) ~ .form__icon {
-  fill: #2196f3;
-}
-
-.form__input:not(:-ms-input-placeholder) ~ .form__icon {
-  fill: #2196f3;
-}
-
 .form__field:focus-within > .form__icon,
 .form__input:not(:placeholder-shown) ~ .form__icon {
   fill: #2196f3;
@@ -762,24 +765,24 @@ img {
   margin-bottom: 4px;
 }
 
+.form__label,
+.comment__label,
 .comment::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
-.comment::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
+.form__label,
+.comment__label,
 .comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
+.form__label,
+.comment__label,
 .comment::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -810,10 +813,6 @@ img {
 }
 
 .comment::-webkit-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.comment::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -887,8 +886,8 @@ img {
 
 .submit-button:hover,
 .submit-button:focus {
-  -webkit-box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
-          box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.3);
+          box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.3);
 }
 
 .feature-list {
@@ -1034,8 +1033,8 @@ img {
 }
 
 .clients-list__item {
-  -ms-flex-preferred-size: 16.6666666667%;
-      flex-basis: 16.6666666667%;
+  -ms-flex-preferred-size: calc(100% / 6);
+      flex-basis: calc(100% / 6);
 }
 
 .clients-list__item:not(:last-child) {
@@ -1168,13 +1167,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscr__input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .subscr__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -1273,14 +1265,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * $card-set-gap);
+  margin-left: calc(-1 * $card-set-gap);
 }
 
 .card {
   display: block;
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
+  -ms-flex-preferred-size: calc(100% / 3 - $card-set-gap);
+      flex-basis: calc(100% / 3 - $card-set-gap);
   margin-top: 30px;
   margin-left: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1355,4 +1347,5 @@ img {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
