@@ -32,19 +32,19 @@
   transition: border-color $transition-duration $timing-function;
 
   @extend %button;
-}
 
-.close-button:hover,
-.close-button:focus {
-  border-color: getColor('accent-color');
+  &:hover,
+  &:focus {
+    border-color: getColor('accent-color');
+  }
 }
 
 .close-button__icon {
   fill: currentColor;
   transition: fill $transition-duration $timing-function;
-}
 
-.close-button:hover .close-button__icon,
-.close-button:focus .close-button__icon {
-  fill: getColor('accent-color');
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: getColor('accent-color');
+  }
 }
