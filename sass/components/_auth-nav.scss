@@ -24,11 +24,11 @@
   transition: color $transition-duration $timing-function;
 
   @extend %link;
-}
 
-.auth-nav-list__link:hover,
-.auth-nav-list__link:focus {
-  color: getColor('accent-color');
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
+  }
 }
 
 .auth-nav-list__icon {
