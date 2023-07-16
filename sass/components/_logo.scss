@@ -7,6 +7,10 @@
   line-height: 1.19;
 
   @extend %link;
+
+  &--white {
+    color: getColor('white-color');
+  }
 }
 
 .logo__accent {
