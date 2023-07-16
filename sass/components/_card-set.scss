@@ -1,27 +1,27 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * $card-set-gap);
-  margin-left: calc(-1 * $card-set-gap);
+  margin-top: calc(-1 * #{$card-set-gap});
+  margin-left: calc(-1 * #{$card-set-gap});
 
   @extend %list;
 }
 
 .card {
   display: block;
-  flex-basis: calc(100% / 3 - $card-set-gap);
-  margin-top: $card-set-gap;
-  margin-left: $card-set-gap;
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-top: #{$card-set-gap};
+  margin-left: #{$card-set-gap};
 
   transition: box-shadow $transition-duration $timing-function;
 
   @extend %link;
-}
 
-.card:hover,
-.card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .card__thumb {
@@ -46,11 +46,11 @@
 
   transform: translateX(-100%);
   transition: transform $transition-duration $timing-function;
-}
 
-.card:hover .overlay,
-.card:focus .overlay {
-  transform: translateX(0);
+  .card:hover &,
+  .card:focus & {
+    transform: translateX(0);
+  }
 }
 
 .overlay__text {
