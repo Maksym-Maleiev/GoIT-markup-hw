@@ -19,10 +19,10 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 28px;
-}
 
-.form__field--margin {
-  margin-bottom: 10px;
+  &--margin {
+    margin-bottom: 10px;
+  }
 }
 
 .form__input {
@@ -33,14 +33,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-}
 
-.form__field:focus-within > .form__input,
-.textarea__field:focus-within > .comment {
-  border-color: transparent;
-  outline: 1px solid getColor('accent-color');
+  .form__field:focus-within > & {
+    border-color: transparent;
+    outline: 1px solid getColor('accent-color');
 
-  transition: border-color $timing-function $transition-duration;
+    transition: border-color $timing-function $transition-duration;
+  }
 }
 
 .form__label {
@@ -49,12 +48,19 @@
   left: 42px;
   transform: translateY(-50%);
 
-  transition: transform $transition-duration $timing-function;
-}
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 
-.form__field:focus-within > .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
-  transform: translate(-30px, -40px);
+  transition: transform $transition-duration $timing-function;
+
+  .form__field:focus-within > & {
+    transform: translate(-30px, -40px);
+  }
+
+  .form__input:not(:placeholder-shown) + & {
+    transform: translate(-30px, -40px);
+  }
 }
 
 .form__icon {
@@ -67,42 +73,48 @@
   fill: getColor('secondary-color');
 
   transition: fill $transition-duration $timing-function;
-}
 
-.form__field:focus-within > .form__icon,
-.form__input:not(:placeholder-shown) ~ .form__icon {
-  fill: getColor('accent-color');
-}
+  .form__field:focus-within > & {
+    fill: getColor('accent-color');
+  }
 
-.comment__label {
-  margin-bottom: 4px;
-}
-
-.form__label,
-.comment__label,
-.comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
-.form__input,
-.comment {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.textarea__field {
-  margin-bottom: 20px;
+  .form__input:not(:placeholder-shown) ~ & {
+    fill: getColor('accent-color');
+  }
 }
 
 .comment {
   padding: 12px 16px;
   resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &::placeholder {
+    color: getColor('placeholder-color');
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+  .textarea__field:focus-within > & {
+    border-color: transparent;
+    outline: 1px solid getColor('accent-color');
+
+    transition: border-color $timing-function $transition-duration;
+  }
 }
 
-.comment::placeholder {
-  color: getColor('placeholder-color');
+.comment__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.textarea__field {
+  margin-bottom: 20px;
 }
 
 .policy__field {
@@ -122,12 +134,12 @@
   border: 2px solid getColor('black-color');
   border-radius: 2px;
   color: getColor('white-color');
-}
 
-.checkbox:checked + .checkbox__icon {
-  background-color: getColor('accent-color');
-  fill: currentColor;
-  border: none;
+  .checkbox:checked + & {
+    background-color: getColor('accent-color');
+    fill: currentColor;
+    border: none;
+  }
 }
 
 .policy__label {
@@ -152,9 +164,9 @@
   transition: box-shadow $timing-function $transition-duration;
 
   @extend %button;
-}
 
-.submit-button:hover,
-.submit-button:focus {
-  box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
+  }
 }
