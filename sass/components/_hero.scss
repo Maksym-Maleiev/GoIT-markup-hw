@@ -37,13 +37,13 @@
   transition: box-shadow $transition-duration $timing-function;
 
   @extend %button;
-}
 
-.hero__button:hover,
-.hero__button:focus {
-  box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
-}
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 1px 1px hsla(0, 0%, 46%, 0.3);
+  }
 
-.hero__button:active {
-  box-shadow: inset 3px 3px 3px 3px hsla(207, 83%, 19%, 0.3);
+  &:active {
+    box-shadow: inset 3px 3px 3px 3px hsla(207, 83%, 19%, 0.3);
+  }
 }
