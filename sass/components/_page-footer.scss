@@ -6,6 +6,8 @@
 }
 
 .footer-inner {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 }
