@@ -1,0 +1,16 @@
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.address__text {
+  color: getColor('white-color');
+}
+
+.address__link {
+  display: inline-block;
+  margin-top: 9px;
+  color: getColor('auth-nav-text-color');
+
+  @extend %link;
+}
