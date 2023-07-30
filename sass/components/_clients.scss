@@ -1,15 +1,24 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  margin-top: -30px;
+  margin-left: -30px;
 
   @extend %list;
 }
 
 .clients-list__item {
-  flex-basis: calc(100% / 6);
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
 
-  &:not(:last-child) {
-    margin-right: $card-set-gap;
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 6);
+
+    &:not(:last-child) {
+      margin-right: $card-set-gap;
+    }
   }
 }
 
