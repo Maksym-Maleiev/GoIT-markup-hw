@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+}
+
 .page-header::after {
   content: '';
   display: block;
@@ -8,4 +12,8 @@
 
 .inner-container {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
