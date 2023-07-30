@@ -1,0 +1,23 @@
+.section {
+  $padding: 94px;
+  padding-top: $padding;
+  padding-bottom: $padding;
+
+  &--no-padding {
+    padding-bottom: 0;
+  }
+
+  &--bg-color {
+    background-color: getColor('secondary-bg-color');
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+  color: getColor('secondary-color');
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
