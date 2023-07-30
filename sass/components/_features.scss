@@ -1,0 +1,30 @@
+.feature-list {
+  display: flex;
+
+  @extend %list;
+}
+
+.feature-list__item {
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-list__thumb {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: getColor('secondary-bg-color');
+}
+
+.feature-list__subtitle {
+  margin-bottom: 10px;
+  color: getColor('secondary-color');
+
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
