@@ -1,7 +1,9 @@
 .feature-list {
-  display: flex;
-
   @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .feature-list__item {
