@@ -1,0 +1,37 @@
+.auth-nav-list {
+  display: flex;
+  margin-left: auto;
+
+  @extend %list;
+}
+
+.auth-nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav-list__link {
+  @include centeredFlex(inline-flex);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: getColor('main-color');
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $transition-duration $timing-function;
+
+  @extend %link;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
+  }
+}
+
+.auth-nav-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
