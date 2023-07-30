@@ -1,0 +1,50 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+
+  background-color: getColor('white-color');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function;
+}
+
+.close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+
+  @include centeredFlex();
+
+  padding: 9px;
+  height: 30px;
+  border-radius: 50%;
+  color: getColor('black-color');
+  background: getColor('white-color');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: border-color $transition-duration $timing-function;
+
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    border-color: getColor('accent-color');
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
+  transition: fill $transition-duration $timing-function;
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: getColor('accent-color');
+  }
+}
