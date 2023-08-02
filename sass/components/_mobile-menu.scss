@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 40px 48px;
   background-color: #fff;
   z-index: 999;
@@ -58,7 +58,9 @@
 }
 
 .mobile-contacts {
-  margin-bottom: 64px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-menu__item:not(:last-child),
@@ -71,11 +73,13 @@
 }
 
 .mobile-menu__link,
-.mobile-contacts__link {
+.mobile-contacts__link,
+.mobile-social__link {
   @extend %link;
 }
 
 .mobile-menu__link {
+  position: relative;
   color: map-get($colors, 'secondary-color');
   font-size: 24px;
   font-weight: 500;
@@ -86,6 +90,36 @@
     font-size: 40px;
     line-height: 1.18;
   }
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-color');
+  }
+}
+
+.mobile-menu__link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  background-color: getColor('accent-color');
+  border-radius: 2px;
+
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function;
+}
+
+.mobile-menu__link:hover::after,
+.mobile-menu__link:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .mobile-contacts__link {
@@ -100,7 +134,8 @@
     line-height: 1.17;
   }
 
-  &--accent {
+  &:hover,
+  &:focus {
     color: map-get($colors, 'accent-color');
     font-size: 24px;
     font-weight: 500;
@@ -138,14 +173,4 @@
   font-weight: 500;
   line-height: 1.22px;
   letter-spacing: 0.36px;
-
-  @extend %link;
 }
-
-// .mobile-social__link:after {
-//   content: '';
-//   margin-left: 10px;
-//   width: 1px;
-//   height: 22px;
-//   background-color: rgba(33, 33, 33, 0.2);
-// }
