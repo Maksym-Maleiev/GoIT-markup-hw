@@ -1,10 +1,16 @@
 .section {
-  $padding: 94px;
+  $padding: 60px;
   padding-top: $padding;
   padding-bottom: $padding;
 
+  @media screen and (min-width: $desktop) {
+    $padding: 94px;
+  }
+
   &--no-padding {
-    padding-bottom: 0;
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 0;
+    }
   }
 
   &--bg-color {
@@ -13,11 +19,15 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: getColor('secondary-color');
 
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
