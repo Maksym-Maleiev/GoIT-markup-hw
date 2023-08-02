@@ -1,6 +1,5 @@
 .modal {
   position: absolute;
-  max-width: 290px;
   width: 100%;
 
   background-color: getColor('white-color');
@@ -11,11 +10,8 @@
   transition: transform $transition-duration $timing-function,
     opacity $transition-duration $timing-function;
 
-  @media screen and (min-width: $mobile) {
-    max-width: 450px;
-  }
-
   @media screen and (min-width: $tablet) {
+    max-width: 450px;
     top: 50%;
     left: 50%;
 
