@@ -1,7 +1,4 @@
 .modal {
-  position: absolute;
-  width: 100%;
-
   background-color: getColor('white-color');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -10,12 +7,21 @@
   transition: transform $transition-duration $timing-function,
     opacity $transition-duration $timing-function;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
+    width: 100%;
     max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%) scale(1);
+
+    // width: 100%;
+    // max-width: 450px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -24,9 +30,9 @@
 }
 
 .close-button {
-  position: absolute;
-  top: -15px;
-  right: -15px;
+  // position: absolute;
+  // top: -15px;
+  // right: -15px;
 
   @include centeredFlex();
 
