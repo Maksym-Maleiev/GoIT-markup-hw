@@ -8,17 +8,15 @@
     opacity $transition-duration $timing-function;
 
   @media screen and (min-width: $mobile) {
-    width: 100%;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: $tablet) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: $desktop) {
@@ -27,11 +25,7 @@
 }
 
 .close-button {
-  // @include centeredFlex();
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex($type: inline-flex);
 
   padding: 6px;
   width: 30px;
@@ -50,13 +44,13 @@
     border-color: getColor('accent-color');
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
     margin-left: calc(100% - 38px);
     margin-right: 8px;
     margin-top: 8px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     position: absolute;
     top: 8px;
     right: 8px;
