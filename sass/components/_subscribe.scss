@@ -38,6 +38,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+  }
+
   @media screen and (min-width: $desktop) {
     min-width: 358px;
   }
