@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2px 20px 40px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     padding: 40px;
   }
 }
@@ -15,6 +15,7 @@
   font-size: 20px;
   line-height: 1.15;
   color: getColor('secondary-color');
+  text-align: center;
 }
 
 .form__field {
@@ -130,7 +131,7 @@
 
 .checkbox__icon {
   display: inline-block;
-  width: 16px;
+  max-width: 16px;
   height: 15px;
   fill: none;
   background-color: transparent;
@@ -148,11 +149,24 @@
 
 .policy__label {
   margin-left: 8px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.36px;
+
+  @media screen and (min-width: $mobile) {
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
 }
 
 .policy__accent {
   color: getColor('accent-color');
-  margin-left: 4px;
 }
 
 .submit-button {
