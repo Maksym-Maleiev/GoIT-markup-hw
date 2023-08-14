@@ -14,25 +14,34 @@
   <header class="page-header">
     <div class="container">
       <div class="inner-container">
+        <!-- SITE-NAV -->
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
 
-          <ul class="site-nav-list list">
+          <ul class="site-nav-list">
             <li class="site-nav-list__item">
-              <a href="./index.html" class="site-nav-list__link link">Studio</a>
+              <a href="./index.html" class="site-nav-list__link">Studio</a>
             </li>
             <li class="site-nav-list__item">
-              <a href="./portfolio.html" class="site-nav-list__link site-nav-list__link--current link">Portfolio</a>
+              <a href="./portfolio.html" class="site-nav-list__link site-nav-list__link--current">Portfolio</a>
             </li>
             <li class="site-nav-list__item">
-              <a href="#contacts" class="site-nav-list__link link">Contacts</a>
+              <a href="#contacts" class="site-nav-list__link">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="auth-nav-list list">
+        <!-- MENU-TOGGLE -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <!-- ---------- -->
+
+        <ul class="auth-nav-list">
           <li class="auth-nav-list__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav-list__link link mail">
+            <a href="mailto:info@devstudio.com" class="auth-nav-list__link">
               <svg class="auth-nav-list__icon" width="16px" height="12">
                 <use href="./images/sprite.svg#mail"></use>
               </svg>
@@ -40,7 +49,7 @@
             </a>
           </li>
           <li class="auth-nav-list__item">
-            <a href="tel:+380961111111" class="auth-nav-list__link link tel">
+            <a href="tel:+380961111111" class="auth-nav-list__link">
               <svg class="auth-nav-list__icon" width="10px" height="16">
                 <use href="./images/sprite.svg#tel"></use>
               </svg>
@@ -270,55 +279,57 @@
   </main>
 
   <!-- PAGE FOOTER -->
-  <footer id="contacts" class="page-footer">
+  <footer id="contacts" id="mobile-contacts" class="page-footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-nav">
-          <a href="./index.html" class="logo logo--white"><span class="logo__accent">Web</span>Studio</a>
+        <div class="wrapper">
+          <div class="footer-nav">
+            <a href="./index.html" class="logo logo--white"><span class="logo__accent">Web</span>Studio</a>
 
-          <address class="address">
-            <p class="address__text">Kyiv, 26 Lesya Ukrainka Ave</p>
-            <a href="mailto:info@example.com" class="address__link link">info@example.com</a><br />
-            <a href="tel:+380991111111" class="address__link link">+38(099) 111-11-11</a>
-          </address>
-        </div>
+            <address class="address">
+              <p class="address__text">Kyiv, 26 Lesya Ukrainka Ave</p>
+              <a href="mailto:info@example.com" class="address__link link">info@example.com</a><br />
+              <a href="tel:+380991111111" class="address__link link">+38(099) 111-11-11</a>
+            </address>
+          </div>
 
-        <div class="join">
-          <b class="join__title">Join</b>
+          <div class="join">
+            <b class="join__title">Join</b>
 
-          <ul class="social-list list">
-            <li class="social-list__item">
-              <a aria-label="Instagram" href="/" class="social-list__link social-list__link--dark-theme link">
-                <svg class="social-list__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a aria-label="Instagram" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list__item">
-              <a aria-label="Twitter" href="/" class="social-list__link social-list__link--dark-theme link">
-                <svg class="social-list__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="social-list__item">
+                <a aria-label="Twitter" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list__item">
-              <a aria-label="Facebook" href="/" class="social-list__link social-list__link--dark-theme link">
-                <svg class="social-list__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="social-list__item">
+                <a aria-label="Facebook" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list__item">
-              <a aria-label="LinkedIn" href="/" class="social-list__link social-list__link--dark-theme link">
-                <svg class="social-list__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <li class="social-list__item">
+                <a aria-label="LinkedIn" href="/" class="social-list__link social-list__link--dark-theme">
+                  <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="subscr">
@@ -337,6 +348,51 @@
       </div>
     </div>
   </footer>
+
+  <!-- MOBILE-MENU -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/sprite.svg#cross"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">
+        <a href="./index.html" class="mobile-menu__link">Studio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#mobile-contacts" class="mobile-menu__link">Contacts</a>
+      </li>
+    </ul>
+
+    <div class="mobile-wrapper">
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">LinledIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
