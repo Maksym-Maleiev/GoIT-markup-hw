@@ -3,6 +3,10 @@
     margin-bottom: 60px;
   }
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
