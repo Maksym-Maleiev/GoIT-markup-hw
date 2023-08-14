@@ -1,9 +1,27 @@
 .filter-list {
-  @include centeredFlex();
-
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
   @extend %list;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-list__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-list__item:not(:last-child) {
