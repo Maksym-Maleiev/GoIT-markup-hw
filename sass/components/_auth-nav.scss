@@ -7,17 +7,24 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .auth-nav-list__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
 }
 
 .auth-nav-list__link {
   @include centeredFlex(inline-flex);
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: getColor('main-color');
   font-weight: 500;
@@ -32,6 +39,11 @@
   &:hover,
   &:focus {
     color: getColor('accent-color');
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
