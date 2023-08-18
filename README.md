@@ -2,49 +2,48 @@
 
 - Create the `goit-markup-hw-8` repository;
 - Clone the created repository and copy the files of the previous work into it. -Design a responsive
-  version of all pages and elements of
-  [`the homework layout #8`](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>).
+  version of all pages and elements of the
+  [`homework layout #8`](<https://www.figma.com/file/0uRxYENU9pFeOsq0U0u4IJ/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A3329&mode=dev>).
 - Set up `GitHub Pages` and add a link to the live page in the header of the GitHub repository.
 
 ## Eligibility criteria for a mentor
 
 ### Project
 
-**`«A1»`** The project's HTML code was refactored using the BEM methodology.
+**`«A1»`** The `BEM` methodology is used.
 
-**`«A2»`** The CSS code of the project was refactored using the `SASS` preprocessor.
+**`«A2»`** It uses `SASS` preprocesses.
 
-**`«A3»`** A `sass` folder has been created at the root of the project, in which all the
-preprocessor style files are located.
+**`«A3»`** In the `index.html` and `portfolio.htm`l files, the minified style file `main.min.css`
+from the `css` folder is included.
 
-**`«A4»`** The `sass` folder contains the `main.scss` file - the main file into which all SASS
-fragments (partials, `_name.scss` files) are imported.
+**`«A4»`** When viewing the page on any device with a width of `320px` or more, the horizontal
+scrollbar does not appear.
 
-**`«A5»`** The layout color palette and font sets are placed in variables in the `variables.scss`
-file, which is located in the `sass/utils` folder. You can use CSS or SASS variables (optional).
-
-**`«A5»`** For each component, a separate style fragment file has been created in the
-`sass/components` folder. For example `_page-header.scss`, `_logo.scss etc`.
-
-**`«A5»`** The `index.html` and `portfolio.html` files include a minified style file `main.min.css`
-from the `css` folder.
+**`«A5»`** The mobile menu script is included in HTML in a separate `mobile-menu.js` file.
 
 ### Markup
 
-**`«B1»`** Correct naming of block classes according to BEM methodology.
+**`«B1»`** All pages in the `<head>` block have a `viewport` meta tag.
 
-**`«B2»`** Correct naming of element classes according to BEM methodology.
+**`«B2»`** All background and content bitmaps are responsive and support `x1` and `x2` screen
+densities.
 
-**`«B3»`** Correct naming of modifier classes according to BEM methodology.
+**`«B3»`** Responsive background images use the `min-device-pixel-ratio` and `min-resolution` media
+features.
 
-**`«B4»`** Correct naming of impurity classes according to BEM methodology.
-
-**`«B5»`** Class names according to the BEM methodology are clear and descriptive, in English.
+**`«B4»`** Mobile menu markup completed.
 
 ### Decor
 
-**`«C1»`** Selector nesting is used.
+**`«C1»`** When writing styles, the `Mobile First` approach and the media function `(min-width: )`
+were used.
 
-**`«C2»`** The maximum nesting of selectors is 2 levels.
+**`«C2»`** Styles only needed in a certain range are closed in media queries `(min-width: )` and
+`(max-width: )` or only `(max-width: )`.
 
-**`«C3»`** The concatenation operator (`&`) is used to describe pseudo-classes and pseudo-elements.
+**`«C3»`** There is no unnecessary duplication of styles in media queries.
+
+**`«C4»`** The layout is made with respect to three breakpoints: 480px, 768px and 1200px.
+
+**`«C5»`** Designed mobile menu.
