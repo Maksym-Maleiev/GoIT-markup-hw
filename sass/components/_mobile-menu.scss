@@ -13,6 +13,11 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: getColor('accent-color');
+  }
 }
 
 .menu-container {
@@ -45,7 +50,7 @@
   top: 0;
   right: 15px;
 
-  color: #fff;
+  color: getColor('white-color');
 }
 
 .mobile-menu,
@@ -97,7 +102,7 @@
 
   &:hover,
   &:focus {
-    color: map-get($colors, 'accent-color');
+    color: getColor('accent-color');
   }
 }
 
@@ -127,7 +132,7 @@
 }
 
 .mobile-contacts__link {
-  color: map-get($colors, 'main-color');
+  color: getColor('main-color');
   font-size: 20px;
   line-height: 1.15;
   font-weight: 500;
@@ -140,7 +145,7 @@
 
   &:hover,
   &:focus {
-    color: map-get($colors, 'accent-color');
+    color: getColor('accent-color');
     font-size: 24px;
     font-weight: 500;
     line-height: 1.16;
@@ -213,7 +218,7 @@
 .mobile-social__link {
   display: inline-block;
 
-  color: map-get($colors, 'accent-color');
+  color: getColor('accent-color');
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22px;
