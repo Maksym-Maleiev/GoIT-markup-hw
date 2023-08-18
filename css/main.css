@@ -418,6 +418,10 @@ img {
   }
 }
 
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196f3;
+}
+
 .menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +461,7 @@ img {
   position: absolute;
   top: 0;
   right: 15px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .mobile-menu {
