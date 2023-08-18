@@ -4,10 +4,6 @@
 
   @extend %list;
 
-  // @media screen and (min-width: $tablet) {
-  //   @include centeredFlex();
-  // }
-
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
